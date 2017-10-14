@@ -23,7 +23,7 @@ public:
   * A helper method to calculate RMSE.
   */
   VectorXd CalculateRMSE(const vector<VectorXd> &estimations, const vector<VectorXd> &ground_truth);
-
+  VectorXd Nis(VectorXd,VectorXd,MatrixXd);
 };
 
 #endif /* TOOLS_H_ */

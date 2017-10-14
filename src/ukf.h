@@ -67,6 +67,15 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+  ///* Measurements dimension
+  int n_z_laser, n_z_radar;
+
+  ///* NIS for both sensors
+  double NIS_LASER, NIS_RADAR;
+
+ ///* measurerment covariance matrix for both sensors
+ MatrixXd   R_laser_,R_radar_;
+
 
   /**
    * Constructor
@@ -102,6 +111,13 @@ public:
    * @param meas_package The measurement at k+1
    */
   void UpdateRadar(MeasurementPackage meas_package);
+
+  /** Generate sigma points
+   *
+   */
+  void GetSigmaPoints(double );
+
+  void Normalize_angel(double &);
 };
 
 #endif /* UKF_H */

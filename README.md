@@ -1,4 +1,9 @@
 # Unscented Kalman Filter Project Starter Code
+## C++ implementation of UKF using Radar and Lidar measurements for pedestrians' detection.
+___
+#### For more information about how the code is organized, please check the [write_up](write_up.md) file.
+___
+Building
 Self-Driving Car Engineer Nanodegree Program
 
 In this project utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower that the tolerance outlined in the project reburic. 
@@ -9,11 +14,10 @@ This repository includes two files that can be used to set up and intall [uWebSo
 
 Once the install for uWebSocketIO is complete, the main program can be built and ran by doing the following from the project top directory.
 
-1. mkdir build
-2. cd build
-3. cmake ..
-4. make
-5. ./UnscentedKF
+1. cd build
+2. cmake ..
+3. make
+4. ./UnscentedKF
 
 Note that the programs that need to be written to accomplish the project are src/ukf.cpp, src/ukf.h, tools.cpp, and tools.h
 
